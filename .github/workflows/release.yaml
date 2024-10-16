@@ -24,10 +24,10 @@ jobs:
         run: |
           curl -sSL https://install.python-poetry.org | python3 -
 
-      #- name: Test
-       # run: |
-        #  poetry install
-         # poetry run pytest
+      - name: Test
+        run: |
+          poetry install
+          poetry run pytest
 
       - name: Determine Version Change
         id: version_check
