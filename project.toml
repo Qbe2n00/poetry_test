@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "my-package"
+version = "0.1.0"
+description = "PULSO test"
+
+license = "Yonsei"
+
+authors = [
+    "Hyunbeen"
+]
+
+readme = 'README.md'  # Markdown files are supported
+
+repository = "https://github.com/Qbe2n00/poetry_test.git "
+homepage = "https://github.com/Qbe2n00/poetry_test.git "
+
+keywords = ['packaging', 'poetry’]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
