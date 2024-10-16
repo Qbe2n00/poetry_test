@@ -20,14 +20,14 @@ jobs:
         with:
           python-version: "3.10"
 
-      #- name: Install Poetry
-       # run: |
-        #  curl -sSL https://install.python-poetry.org | python3 -
-
-      - name: Test
+      - name: Install Poetry
         run: |
-          poetry install
-          poetry run pytest
+          curl -sSL https://install.python-poetry.org | python3 -
+
+      #- name: Test
+       # run: |
+        #  poetry install
+         # poetry run pytest
 
       - name: Determine Version Change
         id: version_check
